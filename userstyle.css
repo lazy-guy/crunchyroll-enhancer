@@ -1,22 +1,18 @@
 @-moz-document domain("www.crunchyroll.com") {
-@viewport {
-  width: 100vw;
-  max-width: 1366px;
-}
-:root {
-    --main-bg-color: rgb(31, 35, 41);
-    --header-bg: rgb(39, 44, 50);
-    --bg-color-foreground: rgb(42, 45, 57);
-    --scroll: rgb(70, 75, 90);
-    --color-text: #ffffff;
-    --color-text-orange: rgb(255, 139, 77);
-    --color-text-heading: rgb(242, 234, 230);
-    --color-text-lighter: rgb(181, 181, 181);
-    --color-link: #74cafb;
-    --shadow: 0px 0px 38px 5px rgba(0, 0, 0, 0.66);
-    --shadow-light: 0px 0px 5px 2px rgba(0, 0, 0, 0.66);
-    --scale: scale(1.04);
-}
+:root{
+            --main-bg-color: rgb(31,35,45);
+            --header-bg: rgb(39,44,56);
+            --bg-color-foreground: rgb(42, 45, 61);
+			--scroll: rgb(70, 75, 100);
+            --color-text: #ffffff;
+            --color-text-orange: rgb(255, 139, 77);
+            --color-text-heading: rgb(242, 234, 230);
+            --color-text-lighter: rgb(181, 181, 181);
+            --color-link: #74cafb;
+            --shadow: 0px 0px 38px 5px rgba(0,0,0,0.66);
+            --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66);
+            --scale: scale(1.04);
+        }
 #header_beta {
     position: sticky!important;
     top: 0px!important;
@@ -85,7 +81,7 @@
 .season-selectors {
     width: 100%!important;
 }
-.portrait-bubble .tooltip-left {
+.portrait-bubble .tooltip-left, .game-banner-wrapper {
     display: none!important;
 }
 .portrait-bubble div {
@@ -1373,118 +1369,114 @@ body {
 }
 
 @-moz-document url("https://www.crunchyroll.com/home/queue") {
-#source_home .landscape-grid li .queue-wrapper {
-    height: auto;
-}
-#source_home .landscape-grid li {
-    box-shadow: var(--shadow);
-    transition: box-shadow 0.3s, transform 0.3s;
-}
-#source_home .landscape-grid li:hover {
-    box-shadow: var(--shadow);
-    transform: var(--scale);
-}
-#main_content ul#sortable {
-    list-style-type: none;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: flex-start;
-}
-#main_content ul#sortable li.queue-item {
-    width: 200px !important;
-    margin: 10px !important;
-    padding: 0px;
-    height: 116.5px;
-}
-#main_content ul#sortable li.queue-item .small-margin-bottom {
-    margin: 0px;
-}
-#main_content ul#sortable li.queue-item .landscape-element {
-    padding: 0px;
-}
-#main_content ul#sortable li.queue-item .episode-img,
-#main_content ul#sortable li.queue-item .episode-img img {
-    width: 200px !important;
-    height: 112.5px !important;
-    margin: 0px !important;
-    display: block;
-    border: none!important;
-}
-#source_home #main_content .landscape-element {
-    width: 100% !important;
-}
-
-#main_content .landscape-element.episode .play-icon-overlay {
-    width: 200px !important;
-    height: 112.5px !important;
-}
-
-#main_content ul#sortable li.queue-item .series-title {
-    position: absolute !important;
-    bottom: 20px !important;
-    left: 0px !important;
-    width: 200px !important;
-    box-sizing: border-box !important;
-    padding: 8px !important;
-    color: #ffffff !important;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8) !important;
-}
-
-#main_content ul#sortable li.queue-item .series-data {
-    position: absolute !important;
-    bottom: 0px !important;
-    left: 0px !important;
-    width: 200px !important;
-    box-sizing: border-box !important;
-    padding: 8px !important;
-    color: #ffffff !important;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8) !important;
-}
-#main_content ul#sortable li.queue-item .handle {
-    position: absolute !important;
-    top: 10px !important;
-    left: 10px !important;
-    z-index: 400 !important;
-    height: 100px !important;
-}
-#main_content ul#sortable li.queue-item .series-info p.short-desc,
-#source_home .queue-to-top,
-#source_home .dropdown-collection {
-    display: none !important;
-}
-#sidebar .videos .landscape-element .series-info {
-    box-sizing: border-box !important;
-    padding-left: 5px !important;
-}
-.placeholder {
-    width: 200px;
-    transform: scaleY(0);
-}
-#source_home .queue-controls {
-    position: absolute!important;
-    width: 100%!important;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    padding: 5px!important;
-}
-
-#source_home .landscape-grid li:hover .queue-controls {
-    display: block!important;
-}
-#source_home .queue-controls a {
-    color: #fff!important;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8) !important;
-}
-#source_home .more-options {
-    display: block;
-    width: 0px;
-    height: 0px;
-    box-sizing: border-box;
-}
-.content-menu,
-.undo-queue-remove .show-title {
-    width: 100%!important;
-    box-sizing: border-box!important;
-}
+#source_home .landscape-grid li .queue-wrapper{
+        height: auto;
+    }
+    #source_home .landscape-grid li {
+        box-shadow: var(--shadow);
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+    #source_home .landscape-grid li:hover{
+        box-shadow: var(--shadow);
+        transform: var(--scale);
+    }
+    #main_content ul#sortable{
+        list-style-type: none;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: flex-start;
+    }
+    #main_content ul#sortable li.queue-item{
+        width: 200px !important;
+        margin: 10px !important;
+        padding: 0px;
+        height: 116.5px;
+    }
+    #main_content ul#sortable li.queue-item .small-margin-bottom{
+        margin: 0px;
+    }
+    #main_content ul#sortable li.queue-item .landscape-element{
+        padding: 0px;
+    }
+    #main_content ul#sortable li.queue-item .episode-img,
+    #main_content ul#sortable li.queue-item .episode-img img{
+        width: 200px !important;
+        height: 112.5px !important;
+        margin: 0px !important;
+        display: block;
+        border: none!important;
+    }
+    #source_home #main_content .landscape-element{
+        width: 100% !important;
+    }
+    
+    #main_content .landscape-element.episode .play-icon-overlay{
+        width: 200px !important;
+        height: 112.5px !important;
+    }
+    
+    #main_content ul#sortable li.queue-item .series-title{
+        position: absolute !important;
+        bottom: 20px !important;
+        left: 0px !important;
+        width: 200px !important;
+        box-sizing: border-box !important;
+        padding: 8px !important;
+        color: #ffffff  !important;	
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.8) !important;
+    }
+    
+    #main_content ul#sortable li.queue-item .series-data{
+        position: absolute !important;
+        bottom: 0px !important;
+        left: 0px !important;
+        width: 200px !important;
+        box-sizing: border-box !important;
+        padding: 8px !important;
+        color: #ffffff  !important;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.8) !important;
+    }
+    #main_content ul#sortable li.queue-item .handle{
+        position: absolute !important;
+        top: 10px !important;
+        left: 10px !important;
+        z-index: 400 !important;
+        height: 100px !important;
+    }
+    #main_content ul#sortable li.queue-item .series-info p.short-desc, #source_home .queue-to-top, #source_home .dropdown-collection{
+        display: none !important;
+    }#sidebar .videos .landscape-element .series-info {
+        box-sizing: border-box !important;
+        padding-left: 5px !important;
+    }
+    .placeholder{
+        width: 200px;
+        transform: scaleY(0);
+    }
+    #source_home .queue-controls{
+        position: absolute!important;
+        width: 100%!important;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        padding: 5px!important;
+    }
+    
+    #source_home .landscape-grid li:hover .queue-controls{
+        display: block!important;
+    }
+    #source_home .queue-controls a{
+        color: #fff!important;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.8) !important;
+    }
+    #source_home .more-options{
+        display: block;
+        width: 0px;
+        height: 0px;
+        box-sizing: border-box;
+    }
+    .content-menu, .undo-queue-remove .show-title{
+        width: 100%!important;
+        box-sizing: border-box!important;
+    }
 }
