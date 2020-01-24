@@ -1,7 +1,7 @@
 # Themes
 ## Dark Themes
 - ### Blueish Dark
-  ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/blueishdark.PNG)
+  ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/blueishdark.png)
   
   
 - ### Standard Dark
@@ -28,9 +28,3 @@
   
 - ### Blueish Light
   ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/blueishlight.PNG)
-  
-  
-- ### Reddish Light
-  ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/reddishlight.PNG)
-  
-  
