@@ -1,5 +1,5 @@
 # Crunchyroll Enhancer
-![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/blueishdark.png)
+![Screenshot](./imgs/blueishdark.png)
 Enhance the UI of [Crunchyroll](https://www.crunchyroll.com).
 
 [Click to see screenshots of other themes](./imgs/themes.md)
