@@ -1,6 +1,7 @@
 # Crunchyroll Enhancer
 ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/blueishdark.png)
-Enhance the UI of [Crunchyroll](https://www.crunchyroll.com)
+Enhance the UI of [Crunchyroll](https://www.crunchyroll.com).
+[Click to see screenshots of other themes](./imgs/themes.md)
 
 ## Installation
 1. Make sure that Stylus extension is installed. If not, then download for:- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne).
