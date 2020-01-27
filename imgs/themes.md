@@ -19,7 +19,8 @@
 - ### Twilight Dark
   ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/twilightdark.PNG)
   
-  
+- ### Greenish Dark
+  ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/greenishdark.PNG)
 
 ## Light Themes
 - ### Standard Light
@@ -28,3 +29,12 @@
   
 - ### Blueish Light
   ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/blueishlight.PNG)
+
+- ### Greenish Light
+  ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/greenishlight.PNG)
+  
+- ### Twilight Light
+  ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/twilightlight.PNG)
+  
+- ### Void Light
+  ![Screenshot](https://raw.githubusercontent.com/lazy-guy/crunchyroll-enhancer/master/imgs/voidlight.PNG)
