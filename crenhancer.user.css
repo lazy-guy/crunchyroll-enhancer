@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Crunchyroll Enhancer
 @namespace      https://github.com/lazy-guy/
-@version        1.0.1
+@version        1.1.0
 @description    Enhances Crunchyroll
 @homepageURL    https://github.com/lazy-guy/crunchyroll-enhancer
 @supportURL     https://github.com/lazy-guy/crunchyroll-enhancer
@@ -9,7 +9,6 @@
 @license        WTFPL
 @advanced dropdown theme "Theme" {
   Blueish Dark "Blueish Dark" <<<EOT
-    :root{
         --main-bg-color: rgb(31, 35, 45);
         --header-bg: rgb(35,45, 56);
         --bg-color-foreground: rgb(42, 45, 62);
@@ -20,11 +19,8 @@
         --color-text-lighter: rgb(181, 181, 181);
         --color-link: #74cafb;
         --shadow: 0px 0px 38px 5px rgba(0,0,0,0.66);
-        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66);
-        --scale: scale(1.04);
-    } EOT;
-  Standard Dark "Standard Dark" <<<EOT
-    :root{    
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
+  Standard Dark "Standard Dark" <<<EOT  
         --main-bg-color: rgb(18, 18, 18);
         --header-bg: rgb(27, 27, 27);
         --bg-color-foreground: rgb(30, 30, 30);
@@ -35,11 +31,8 @@
         --color-text-lighter: rgb(181, 181, 181);
         --color-link: #74cafb;
         --shadow: 0px 0px 38px 5px rgba(0,0,0,0.66);
-        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66);
-        --scale: scale(1.04);
-    } EOT;
-  AMOLED Dark "AMOLED Dark" <<<EOT
-    :root{    
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
+  AMOLED Dark "AMOLED Dark" <<<EOT 
         --main-bg-color: rgb(0, 0, 0);
         --header-bg: rgb(10, 10, 10);
         --bg-color-foreground: rgb(15, 15, 15);
@@ -50,11 +43,8 @@
         --color-text-lighter: rgb(181, 181, 181);
         --color-link: #74cafb;
         --shadow: 0px 0px 38px 5px rgba(0,0,0,0.66);
-        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66);
-        --scale: scale(1.04);
-    } EOT;
-  Void Dark "Void Dark" <<<EOT
-    :root{    
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
+  Void Dark "Void Dark" <<<EOT  
         --main-bg-color: rgb(0, 0, 0);
         --header-bg: rgb(0, 0, 0);
         --bg-color-foreground: rgb(0, 0, 0);
@@ -65,26 +55,32 @@
         --color-text-lighter: rgb(181, 181, 181);
         --color-link: #74cafb;
         --shadow: 0px 0px 38px 5px rgba(0,0,0,0.66);
-        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66);
-        --scale: scale(1.04);
-    } EOT;
-  Twilight Dark "Twilight Dark" <<<EOT
-    :root{    
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
+  Twilight Dark "Twilight Dark" <<<EOT   
         --main-bg-color: rgb(38, 28, 28);
         --header-bg: rgb(56, 32, 32);
         --bg-color-foreground: rgb(61, 32, 32);
-	    --scroll: rgb(70, 75, 100);
+	    --scroll: rgb(100, 75, 70);
         --color-text: #ffffff;
         --color-text-orange: rgb(255, 139, 77);
         --color-text-heading: rgb(242, 234, 230);
         --color-text-lighter: rgb(181, 181, 181);
         --color-link: #74cafb;
         --shadow: 0px 0px 38px 5px rgba(0,0,0,0.66);
-        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66);
-        --scale: scale(1.04);
-    } EOT;
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
+  Greenish Dark "Greenish Dark" <<<EOT  
+        --main-bg-color: rgb(28, 38, 28);
+        --header-bg: rgb(32, 56, 32);
+        --bg-color-foreground: rgb(32, 62, 32);
+	    --scroll: rgb(70, 100, 75);
+        --color-text: #ffffff;
+        --color-text-orange: rgb(255, 139, 77);
+        --color-text-heading: rgb(242, 234, 230);
+        --color-text-lighter: rgb(181, 181, 181);
+        --color-link: #74cafb;
+        --shadow: 0px 0px 38px 5px rgba(0,0,0,0.66);
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
     Standard Light "Standard Light" <<<EOT
-    :root{
         --header-bg: rgb(255, 255, 255);
         --shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
         --scroll: #ddd;
@@ -96,11 +92,8 @@
         --color-text-heading: rgb(70, 70, 70);
         --color-text-lighter: rgb(112, 112, 112);
         --color-link: rgb(3, 112, 252);
-        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66);
-        --scale: scale(1.04);
-    } EOT;
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
     Blueish Light "Blueish Light" <<<EOT
-    :root{
         --header-bg: rgb(150, 200, 255);
         --shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
         --scroll: #ddd;
@@ -112,36 +105,169 @@
         --color-text-heading: rgb(40, 40, 40);
         --color-text-lighter: rgb(60, 60, 60);
         --color-link: rgb(3, 112, 252);
-        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66);
-        --scale: scale(1.04);
-    } EOT;
-    Twilight Light "Reddish Light" <<<EOT
-    :root{
-        --header-bg: rgb(255, 150, 110);
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
+    Twilight Light "Twilight Light" <<<EOT
+        --header-bg: rgb(245, 150, 110);
         --shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
         --scroll: #ddd;
-        --bg-color-foreground: rgb(255, 150, 110);
-        --main-bg-color: rgb(255, 180, 180);
+        --bg-color-foreground: rgb(245, 150, 110);
+        --main-bg-color: rgb(245, 180, 180);
         --scroll: rgb(255, 110, 90);
         --color-text: #000000;
         --color-text-orange: rgb(255, 139, 77);
         --color-text-heading: rgb(50, 50, 50);
         --color-text-lighter: rgb(80, 80, 80);
         --color-link: rgb(3, 112, 252);
-        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66);
-        --scale: scale(1.04);
-    } EOT;
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
+    Greenish Light "Greenish Light" <<<EOT
+        --header-bg: rgb(150, 230, 110);
+        --shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+        --scroll: #ddd;
+        --bg-color-foreground: rgb(150, 230, 110);
+        --main-bg-color: rgb(180, 245, 180);
+        --scroll: rgb(110, 240, 90);
+        --color-text: #000000;
+        --color-text-orange: rgb(255, 139, 77);
+        --color-text-heading: rgb(50, 50, 50);
+        --color-text-lighter: rgb(80, 80, 80);
+        --color-link: rgb(3, 112, 252);
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
+  Void White "Void White" <<<EOT
+  
+        --main-bg-color: rgb(255, 255, 255);
+        --header-bg: rgb(255, 255, 255);
+        --bg-color-foreground: rgb(255, 255, 255);
+	    --scroll: rgb(40, 40, 40);
+        --color-text: #000000;
+        --color-text-orange: rgb(255, 139, 77);
+        --color-text-heading: rgb(42, 34, 30);
+        --color-text-lighter: rgb(81, 81, 81);
+        --color-link: rgb(3, 92, 255);
+        --shadow: 0px 0px 38px 5px rgba(0,0,0,0.66);
+        --shadow-light: 0px 0px 5px 2px rgba(0,0,0,0.66); EOT;
 }
-==/UserStyle== */
-@-moz-document domain("www.crunchyroll.com") {
-    /*[[theme]]*/
+@advanced dropdown header-pos "Header Position" {
+    Fixed "Fixed" <<<EOT
     #header_beta {
         position: sticky!important;
         top: 0px!important;
         left: 0!important;
         z-index: 999999!important;
+    } EOT;
+    Normal "Normal" <<<EOT
+    #header_beta {
+        z-index: 99!important;
+    } EOT;
+}
+@advanced dropdown max-width "Max Width of main content" {
+    Default "Default (1280px)" <<<EOT
+    1280px EOT;
+    No Limit "No Limit" <<<EOT
+    99999px EOT;
+    1000px "1000px" <<<EOT
+    1000px EOT;
+    1100px "1100px" <<<EOT
+    1100px EOT;
+    1200px "1200px" <<<EOT
+    1200px EOT;
+    1300px "1300px" <<<EOT
+    1300px EOT;
+    1400px "1400px" <<<EOT
+    1400px EOT;
+    1500px "1500px" <<<EOT
+    1500px EOT;
+    1600px "1600px" <<<EOT
+    1600px EOT;
+    1700px "1700px" <<<EOT
+    1700px EOT;
+    1800px "1800px" <<<EOT
+    1800px EOT;
+    1900px "1900px" <<<EOT
+    1900px EOT;
+    2000px "2000px" <<<EOT
+    2000px EOT;
+    2100px "2100px" <<<EOT
+    2100px EOT;
+    2200px "2200px" <<<EOT
+    2200px EOT;
+    2300px "2300px" <<<EOT
+    2300px EOT;
+    2400px "2400px" <<<EOT
+    2400px EOT;
+    2500px "2500px" <<<EOT
+    2500px EOT;
+}
+@advanced dropdown season-ep "Show Episodes in"{
+    Single Row "Single Row" <<<EOT
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll!important; EOT;
+    Multiple Rows "Multiple Rows" <<<EOT
+    flex-wrap: wrap!important; EOT;
+}
+@advanced dropdown scale-anim "Scale Animations"{
+    Default "Default" <<<EOT
+    --scale: scale(1.04); EOT;
+    Light "Light" <<<EOT
+    --scale: scale(1.02); EOT;
+    Heavy "Heavy" <<<EOT
+    --scale: scale(1.06); EOT;
+    None "None" <<<EOT
+    --scale: scale(1); EOT;
+}
+@advanced dropdown fade-anim "Fade in Animation"{
+    Enabled "Enabled" <<<EOT
+        opacity: 0;
+        transition: opacity 1s!important;
+        overflow-x: hidden!important;
+        animation-name: fadein!important;
+        animation-duration: 2s!important;
+        animation-delay: 1s!important;
+        animation-fill-mode: forwards!important;
+    EOT;
+    Disabled "Disabled" <<<EOT
+    opacity:1;
+    EOT;
+}
+@advanced dropdown slide-anim "Slide-in Animations"{
+    Enabled "Enabled" <<<EOT
+    .poster {
+        transform: translateX(-700px);
+        animation-name: slideright!important;
+        animation-duration: 1s!important;
+        animation-delay: 3s!important;
+        animation-fill-mode: forwards!important;
     }
 
+
+    #showview-content-header .ch-left,
+    #source_manga_showview h1.ellipsis {
+        transform: translateY(-200px);
+        animation-name: slidedown!important;
+        animation-duration: 1s!important;
+        animation-delay: 3s!important;
+        animation-fill-mode: forwards!important;
+    }
+
+
+    #source_manga_showview #container #sidebar #sidebar_elements li.large-margin-bottom:nth-of-type(n + 2),
+    #source_showview #container #sidebar #sidebar_elements li.large-margin-bottom:nth-of-type(n + 2) {
+        transform: translateX(100vw);
+        animation-name: slideleft!important;
+        animation-duration: 1s!important;
+        animation-delay: 3s!important;
+        animation-fill-mode: forwards!important;
+    } EOT;
+    Disabled "Disabled" <<<EOT
+    EOT;
+}
+==/UserStyle== */
+@-moz-document domain("www.crunchyroll.com") {
+    :root{
+    /*[[theme]]*/
+    /*[[scale-anim]]*/
+    }
+    /*[[header-pos]]*/
     #footer,
     #footer_menu {
         width: 100%!important;
@@ -179,7 +305,7 @@
         min-width: auto!important;
         max-width: none!important;
     }
-
+    
 
     #template_container.template-container {
         box-sizing: border-box!important;
@@ -395,7 +521,7 @@
         #source_browse #main_content,
         #welcome_left,
         #source_home #main_content {
-            width: calc(100vw - 400px)!important;
+            width: calc(100% - 400px)!important;
             box-sizing: border-box!important;
         }
         #source_browse .portrait-container {
@@ -430,7 +556,19 @@
             width: auto!important;
         }
     }
-
+    @media only screen and (min-width: /*[[max-width]]*/) {
+        #template_scroller {
+            width: 100%!important;
+            max-width: /*[[max-width]]*/!important;
+            margin-left: auto!important;
+            margin-right: auto!important;
+        }
+        .welcome-featured-media,
+        .banner-carousel .viewport {
+            width: 100% !important;
+            height: calc((/*[[max-width]]*/ - 400px) * 0.57) !important;
+        }
+    }
     #source_home #main_content .series-info {
         width: calc(100% - 180px)!important;
     }
@@ -472,7 +610,7 @@
 
     .welcome-simulcasts {
         height: auto!important;
-        padding: 20px 5px 10px 5px!important;
+        padding: 20px 0px 10px 0px!important;
     }
     ul.welcome-simulcasts {
         display: flex!important;
@@ -493,9 +631,10 @@
         height: 150px!important;
         box-sizing: border-box!important;
         margin: 5px!important;
-        padding: 5px!important;
+        padding: 5px 0px 5px 5px!important;
         box-shadow: 0 0px 2px rgba(0, 0, 0, .45)!important;
         transition: box-shadow 0.3s, transform 0.3s!important;
+        width: 270px!important;
     }
     .welcome-simulcasts li:hover {
         box-shadow: var(--shadow)!important;
@@ -576,9 +715,7 @@
         overflow: hidden!important;
     }
     #showview_content_videos li.season .portrait-grid {
-        display: flex;
-        overflow-x: scroll !important;
-        flex-wrap: nowrap !important;
+        /*[[season-ep]]*/
         justify-content: flex-start!important;
         box-sizing: border-box!important;
         margin: 0px!important;
@@ -948,7 +1085,9 @@
             width: 100%!important;
             height: calc(90vw * 0.57)!important;
         }
-
+        .collection-carousel-arrow{
+            width: 36px!important;
+        }
         .welcome-featured-media .carousel-arrow-hitarea {
             opacity: 0.4!important;
         }
@@ -1403,41 +1542,10 @@
                     /    \  |  \ |   |   |  \  /  |
                    /      \ |   \| __|__ |   \/   |   */
     body {
-        opacity: 0;
-        transition: opacity 1s!important;
-        overflow-x: hidden!important;
-        animation-name: fadein!important;
-        animation-duration: 2s!important;
-        animation-delay: 1s!important;
-        animation-fill-mode: forwards!important;
+        /*[[fade-anim]]*/
     }
-    .poster {
-        transform: translateX(-700px);
-        animation-name: slideright!important;
-        animation-duration: 1s!important;
-        animation-delay: 3s!important;
-        animation-fill-mode: forwards!important;
-    }
-
-
-    #showview-content-header .ch-left,
-    #source_manga_showview h1.ellipsis {
-        transform: translateY(-200px);
-        animation-name: slidedown!important;
-        animation-duration: 1s!important;
-        animation-delay: 3s!important;
-        animation-fill-mode: forwards!important;
-    }
-
-
-    #source_manga_showview #container #sidebar #sidebar_elements li.large-margin-bottom:nth-of-type(n + 2),
-    #source_showview #container #sidebar #sidebar_elements li.large-margin-bottom:nth-of-type(n + 2) {
-        transform: translateX(100vw);
-        animation-name: slideleft!important;
-        animation-duration: 1s!important;
-        animation-delay: 3s!important;
-        animation-fill-mode: forwards!important;
-    }
+    
+    /*[[slide-anim]]*/
 
     #source_browse #main_content .portrait-grid li {
         transition: transform 0.3s, box-shadow 0.3s;
