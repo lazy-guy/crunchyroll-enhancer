@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Crunchyroll Enhancer
 @namespace      https://github.com/lazy-guy/
-@version        1.2.1
+@version        1.2.2
 @description    Enhances Crunchyroll
 @homepageURL    https://github.com/lazy-guy/crunchyroll-enhancer
 @supportURL     https://github.com/lazy-guy/crunchyroll-enhancer
@@ -335,7 +335,8 @@
     No "No" <<<EOT
     EOT;
     Yes "Yes" <<<EOT
-        #global_base_bubble, .portrait-bubble, .mug.js-simulcast-episode-link, #source_showview .description, #showview_content .portrait-element img.landscape, #showview_content .portrait-element .short-desc, .welcome-media-mug img{
+        #global_base_bubble, .portrait-bubble, .mug.js-simulcast-episode-link, #source_showview .description, #showview_content .portrait-element img.landscape, #showview_content .portrait-element .short-desc, .welcome-media-mug img,
+.welcome-latest-videos span.name, .qtip, .episode-info .thumbnail, .guestbook.comments, #showmedia_about_info p{
         display: none!important;
         transform: scale(0);
     } EOT;
@@ -1418,7 +1419,8 @@
     .widget-media-bubble-desc,
     ul.newsfeed .news-date-label,
     .paginator-lite-selected,
-    span.name {
+    span.name,
+    .error-text{
         color: var(--color-text)!important;
     }
 
@@ -1453,7 +1455,8 @@
     ul.newsfeed h2 a:hover,
     span.series,
     input.search-query,
-    .series-title {
+    .series-title,
+    .simulcast-calendar{
         color: var(--color-text-heading)!important;
     }
     .widget-series-bubble-metadata div,
@@ -1496,7 +1499,9 @@
     .short-desc,
     ul.topbar-nav-sub li.dim a:hover,
     ul.topbar-nav-sub li.highlight a,
-    .white {
+    .white,
+    .calendar,
+    .day-date .specific-date{
         color: var(--color-text-lighter)!important;
     }
 
@@ -1515,7 +1520,10 @@
     #source_showview .season-dropdown.open,
     #source_showview .season-dropdown,
     .guestbook-sort-bar,
-    .content-panel {
+    .content-panel,
+    .day.active .calendar-day,
+    .simulcast-calendar-header .premium-message,
+    .error-details{
         background: var(--bg-color-foreground)!important;
         background-color: var(--bg-color-foreground)!important;
     }
@@ -1642,6 +1650,15 @@
     *::-webkit-scrollbar-thumb {
         background: var(--scroll);
     }
+    
+    .calendar::after{
+        background: linear-gradient(to left, var(--main-bg-color) ,rgba(255,255,255,0))!important;
+    }
+    
+    .calendar::before{
+        background: linear-gradient(to right, var(--main-bg-color) ,rgba(255,255,255,0))!important;
+    }
+    
     /*                             _____ .        .
                       /\    |\   |   |   |\      /|
                      /__\   | \  |   |   | \    / |
