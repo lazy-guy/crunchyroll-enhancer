@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Crunchyroll Enhancer
 @namespace      https://github.com/lazy-guy/
-@version        1.1.2
+@version        1.1.3
 @description    Enhances Crunchyroll
 @homepageURL    https://github.com/lazy-guy/crunchyroll-enhancer
 @supportURL     https://github.com/lazy-guy/crunchyroll-enhancer
@@ -261,6 +261,75 @@
     1px EOT;
     Yes "Yes" <<<EOT
     999999px EOT;
+}
+@advanced dropdown queue "Queue Style"{
+    List "List" <<<EOT
+            .series-info {
+            margin: 0!important;
+        }
+
+        .queue-sortable .queue-item .queue-item-content {
+            box-sizing: border-box!important;
+            width: 100%;
+        }
+
+        .queue-sortable .queue-item .anchor-to-episode {
+            box-sizing: border-box!important;
+            width: 80%;
+            flex: 1 1;
+        }
+        .source-home .dropdown-collection {
+            flex: 0 0 36px;
+            margin: 0!important;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAB6CAYAAADXhPEfAAAByklEQVR4nO3XP0tCURjHcWch6EUohUtTW3AQpKXxgji4+AKkXoBE0NBitIZBNFgQgYUYDSbcwa1zkeufKAhKehHeoXiarlldr8fwnueiv+9+eD48w4EnEkEIIYQWqE6nQ9O+6fV6U79RyrZtklKSZVnKAyzLIikldbvd2aNckCrKxUgpqd1uB7ulSSgtGFWUVswkFAtmHIoV44Vix3ih2DFutm2HB4MQQgghhBBCc1xi74Zq7Xfl+6vS6tP6QS2Yey1WqFA0X6blnQslVKXVp6Xtc4rmy7S2X509ygWpoK6styEmmi/Tyu51sFvyQ2nDqKC0Y/xQlw+vPJhxKFaMF4od44Vix7jFCpXwYBBCCCGEEEJojstkMtRsNpXvL9M0KZfLBXOvGYZBQghKpVJKKNM0KZlMkhCCstns7FEuSAXVaDSGGCEEpdPpYLfkh9KGUUFpx/ih6vU6D2YcihXjhWLHeKHYMW6GYYQHgxBCCCGEEEILmFMS5BxvhOMuc0qCBsU4DYpxftQohh31A3O4SoOjBB/qN+bjsUqfL/c8qD+Yp9vhYO0oP4x2lApGK8o53fzGPN9NHDCKCm5LZ1tKmFGUc5IMx4f5374ArM3abXhhYhcAAAAASUVORK5CYII=")
+        }
+    EOT;
+    Grid "Grid" <<<EOT
+    ul#sortable{
+            display: flex!important;
+            flex-wrap: wrap!important;
+            justify-content: center;
+        }
+        ul#sortable li{
+            margin: 10px;
+        }
+        .queue-sortable .queue-item {
+            width: 320px;
+            margin: 10px!important;
+        }
+        .queue-sortable .queue-item .queue-item-content{
+            padding: 0!important;
+            margin: 0!important;
+        }
+        .source-home .favorite-status {
+	        height: 21px!important;
+	        width: 21px!important;
+	        position: absolute!important;
+	        background: rgba(120, 120, 120,0.3)!important;
+            z-index: 20;
+        }
+        .queue-sortable .queue-item .anchor-to-episode {
+	        margin: 0!important;
+        }
+        .source-home .episode-img {
+	        width: 320px!important;
+	        height: 180px!important;
+	        margin-bottom: 2px;
+        }
+        .series-info{
+            position: absolute!important;
+            width:100%!important;
+            height: 100%!important;
+            margin: 0!important;
+            padding: 10px!important;
+        }
+        .series-info span{
+            text-shadow: 1px 1px 10px rgba(0,0,0, 0.8)!important;
+            color: #ffffff!important;
+        }
+        .short-desc{
+            display: none!important;
+        } EOT;
 }
 ==/UserStyle== */
 @-moz-document domain("www.crunchyroll.com") {
@@ -1633,31 +1702,7 @@
 
 @-moz-document url("https://www.crunchyroll.com/home/queue") {
     @media only screen and (min-width: /*[[theming-only]]*/) {
-        .queue-sortable .queue-item {
-            width: 95%;
-            margin: 10px auto!important;
-        }
-
-
-        .series-info {
-            margin: 0!important;
-        }
-
-        .queue-sortable .queue-item .queue-item-content {
-            box-sizing: border-box!important;
-            width: 100%;
-        }
-
-        .queue-sortable .queue-item .anchor-to-episode {
-            box-sizing: border-box!important;
-            width: 80%;
-            flex: 1 1;
-        }
-        .source-home .dropdown-collection {
-            flex: 0 0 36px;
-            margin: 0!important;
-            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAB6CAYAAADXhPEfAAAByklEQVR4nO3XP0tCURjHcWch6EUohUtTW3AQpKXxgji4+AKkXoBE0NBitIZBNFgQgYUYDSbcwa1zkeufKAhKehHeoXiarlldr8fwnueiv+9+eD48w4EnEkEIIYQWqE6nQ9O+6fV6U79RyrZtklKSZVnKAyzLIikldbvd2aNckCrKxUgpqd1uB7ulSSgtGFWUVswkFAtmHIoV44Vix3ih2DFutm2HB4MQQgghhBBCc1xi74Zq7Xfl+6vS6tP6QS2Yey1WqFA0X6blnQslVKXVp6Xtc4rmy7S2X509ygWpoK6styEmmi/Tyu51sFvyQ2nDqKC0Y/xQlw+vPJhxKFaMF4od44Vix7jFCpXwYBBCCCGEEEJojstkMtRsNpXvL9M0KZfLBXOvGYZBQghKpVJKKNM0KZlMkhCCstns7FEuSAXVaDSGGCEEpdPpYLfkh9KGUUFpx/ih6vU6D2YcihXjhWLHeKHYMW6GYYQHgxBCCCGEEEILmFMS5BxvhOMuc0qCBsU4DYpxftQohh31A3O4SoOjBB/qN+bjsUqfL/c8qD+Yp9vhYO0oP4x2lApGK8o53fzGPN9NHDCKCm5LZ1tKmFGUc5IMx4f5374ArM3abXhhYhcAAAAASUVORK5CYII=")
-        }
+        /*[[queue]]*/
     }
     .source-home .dropdown-collection {
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAB6CAYAAADXhPEfAAAByklEQVR4nO3XP0tCURjHcWch6EUohUtTW3AQpKXxgji4+AKkXoBE0NBitIZBNFgQgYUYDSbcwa1zkeufKAhKehHeoXiarlldr8fwnueiv+9+eD48w4EnEkEIIYQWqE6nQ9O+6fV6U79RyrZtklKSZVnKAyzLIikldbvd2aNckCrKxUgpqd1uB7ulSSgtGFWUVswkFAtmHIoV44Vix3ih2DFutm2HB4MQQgghhBBCc1xi74Zq7Xfl+6vS6tP6QS2Yey1WqFA0X6blnQslVKXVp6Xtc4rmy7S2X509ygWpoK6styEmmi/Tyu51sFvyQ2nDqKC0Y/xQlw+vPJhxKFaMF4od44Vix7jFCpXwYBBCCCGEEEJojstkMtRsNpXvL9M0KZfLBXOvGYZBQghKpVJKKNM0KZlMkhCCstns7FEuSAXVaDSGGCEEpdPpYLfkh9KGUUFpx/ih6vU6D2YcihXjhWLHeKHYMW6GYYQHgxBCCCGEEEILmFMS5BxvhOMuc0qCBsU4DYpxftQohh31A3O4SoOjBB/qN+bjsUqfL/c8qD+Yp9vhYO0oP4x2lApGK8o53fzGPN9NHDCKCm5LZ1tKmFGUc5IMx4f5374ArM3abXhhYhcAAAAASUVORK5CYII=")
