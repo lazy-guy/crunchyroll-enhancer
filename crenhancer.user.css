@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Crunchyroll Enhancer
 @namespace      https://github.com/lazy-guy/
-@version        1.2.2
+@version        1.2.3
 @description    Enhances Crunchyroll
 @homepageURL    https://github.com/lazy-guy/crunchyroll-enhancer
 @supportURL     https://github.com/lazy-guy/crunchyroll-enhancer
@@ -337,8 +337,7 @@
     Yes "Yes" <<<EOT
         #global_base_bubble, .portrait-bubble, .mug.js-simulcast-episode-link, #source_showview .description, #showview_content .portrait-element img.landscape, #showview_content .portrait-element .short-desc, .welcome-media-mug img,
 .welcome-latest-videos span.name, .qtip, .episode-info .thumbnail, .guestbook.comments, #showmedia_about_info p{
-        display: none!important;
-        transform: scale(0);
+        transform: scale(0)!important;
     } EOT;
 }
 ==/UserStyle== */
