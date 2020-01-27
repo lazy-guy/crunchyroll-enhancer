@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Crunchyroll Enhancer
 @namespace      https://github.com/lazy-guy/
-@version        1.2.0
+@version        1.2.1
 @description    Enhances Crunchyroll
 @homepageURL    https://github.com/lazy-guy/crunchyroll-enhancer
 @supportURL     https://github.com/lazy-guy/crunchyroll-enhancer
@@ -335,7 +335,7 @@
     No "No" <<<EOT
     EOT;
     Yes "Yes" <<<EOT
-        #global_base_bubble, .portrait-bubble, .mug.js-simulcast-episode-link, #source_showview .description, #showview_content .portrait-element img.landscape, #showview_content .portrait-element .short-desc{
+        #global_base_bubble, .portrait-bubble, .mug.js-simulcast-episode-link, #source_showview .description, #showview_content .portrait-element img.landscape, #showview_content .portrait-element .short-desc, .welcome-media-mug img{
         display: none!important;
         transform: scale(0);
     } EOT;
