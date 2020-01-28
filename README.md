@@ -1,5 +1,5 @@
 # Crunchyroll Enhancer
-![Screenshot](./imgs/blueishdark.png)
+![Screenshot](./imgs/preview.jpg)
 Enhance the UI of [Crunchyroll](https://www.crunchyroll.com).
 
 [Click to see screenshots of other themes](./imgs/themes.md)
@@ -13,3 +13,12 @@ Enhance the UI of [Crunchyroll](https://www.crunchyroll.com).
 1. Open Crunchyroll.
 2. Click on the Stylus icon in your browser's toolbar.
 3. Click on the gear icon in front of the "Crunchyroll Enhancer".
+
+
+## Available Customizations
+- [Themes](./imgs/themes.md)
+- Redesigned UI
+- Header Position (Fixed or Normal)
+- Animations
+- Hide Spoilers
+- Queue Style (List or Grid)
