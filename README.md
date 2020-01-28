@@ -1,5 +1,5 @@
 # Crunchyroll Enhancer
-![Screenshot](./imgs/preview.jpg)
+![Screenshot](https://lazy-guy.github.io/crunchyroll-enhancer/imgs/preview.jpg)
 Enhance the UI of [Crunchyroll](https://www.crunchyroll.com).
 
 [Click to see screenshots of other themes](./imgs/themes.md)
