@@ -17,8 +17,9 @@ Enhance the UI of [Crunchyroll](https://www.crunchyroll.com).
 
 ## Available Customizations
 - [Themes](./imgs/themes.md)
-- Redesigned UI
+- Redesigned UI(Can be disabled by setting "Only Change theme" to "Yes")
 - Header Position (Fixed or Normal)
 - Animations
 - Hide Spoilers
 - Queue Style (List or Grid)
+- Multiple Crunchyroll logo colors
