@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Crunchyroll Enhancer
 @namespace      https://github.com/lazy-guy/
-@version        1.3.0
+@version        1.3.3
 @description    Enhances Crunchyroll
 @homepageURL    https://github.com/lazy-guy/crunchyroll-enhancer
 @supportURL     https://github.com/lazy-guy/crunchyroll-enhancer
@@ -159,7 +159,7 @@
     Default "Default (1280px)" <<<EOT
     1280px EOT;
     No Limit "No Limit" <<<EOT
-    99999px EOT;
+    101vw EOT;
     1000px "1000px" <<<EOT
     1000px EOT;
     1100px "1100px" <<<EOT
@@ -287,7 +287,7 @@
     ul#sortable{
             display: flex!important;
             flex-wrap: wrap!important;
-            justify-content: center;
+            justify-content: flex-start;
         }
         ul#sortable li{
             margin: 10px;
@@ -364,12 +364,65 @@
     Green "Green" <<<EOT
     #33ff33!important; EOT;
 }
+@advanced dropdown playersize "Video Player Size"{
+    Default "Default" <<<EOT
+        [id *= "showmedia_video"]{
+            width: 88vw!important;
+            max-width: var(--max-width)!important;
+            height: calc(88vw * 0.55)!important;
+            margin: 5px auto 5px auto!important;
+        }
+        @media only screen and (min-aspect-ratio: 17/9){
+            [id *= "showmedia_video"]{
+                width: calc(1.7 * 95vh)!important;
+                max-width: var(--max-width)!important;
+                height: 95vh!important;
+                margin: 5px auto 5px auto!important;
+            }
+        }
+    EOT;
+    Fit Height "Max Height(Not recommended for very tall displays)" <<<EOT
+        [id *= "showmedia_video"]{
+            width: calc(1.8 * 100vh)!important;
+            max-width: var(--max-width)!important;
+            height: 100vh!important;
+            margin: 5px auto 5px auto!important;
+        } 
+    EOT;
+    Fit Width "Max Width(Not recommended for very wide displays)" <<<EOT
+        [id *= "showmedia_video"]{
+            width: 98vw!important;
+            max-width: var(--max-width)!important;
+            height: calc(98vw * 0.55)!important;
+            margin: 5px auto 5px auto!important;
+        } 
+    EOT;
+}
+@advanced dropdown titlesize "Font Size of Show Title"{
+    Default "Default(2.4em)" <<<EOT
+    2.4em EOT;
+    3.0 "3.0em" <<<EOT
+    3.0em EOT;
+    2.8 "2.8em" <<<EOT
+    2.8em EOT;
+    2.6 "2.6em" <<<EOT
+    2.6em EOT;
+    2.2 "2.2em" <<<EOT
+    2.2em EOT;
+    2.0 "2.0em" <<<EOT
+    2.0em EOT;
+    1.8 "1.8em" <<<EOT
+    1.8em EOT;
+    1.6 "1.6em" <<<EOT
+    1.6em EOT;
+}
 ==/UserStyle== */
 @-moz-document domain("www.crunchyroll.com") {
     :root {
         /*[[theme]]*/
         /*[[scale-anim]]*/
         --max-width: /*[[max-width]]*/;
+        --title-size: /*[[titlesize]]*/
     }
     #header_beta{
         /*[[header-pos]]*/
@@ -475,7 +528,7 @@
             z-index: 999;
         }
         #showview-content-header .ch-left h1 {
-            font-size: 2.4em!important;
+            font-size: var(--title-size)!important;
         }
         #source_showview #container #main_content {
             order: 30!important;
@@ -505,6 +558,12 @@
         #source_showview #container #sidebar #sidebar_elements li.large-margin-bottom:nth-of-type(2) {
             grid-area: avail!important;
             margin-bottom: 0px!important;
+            width: calc(100vw - 360px)!important;
+        }
+        @media only screen and (min-width: /*[[max-width]]*/){
+            #source_showview #container #sidebar #sidebar_elements li.large-margin-bottom:nth-of-type(2) {
+                width: calc(var(--max-width) - 400px)!important;
+            }
         }
 
         #source_showview #container #sidebar #sidebar_elements li.large-margin-bottom:nth-of-type(3) {
@@ -619,12 +678,16 @@
             width: 100%!important;
             height: calc(100vw * 0.57)!important;
         }
-
+        
+        /*[[playersize]]*/
+        
         #showview_content_volumes {
             max-width: 640px!important;
             margin: auto!important;
         }
+        
 
+        
         @media only screen and (min-width: 1001px) {
             #source_browse #main_content,
             #welcome_left,
@@ -664,12 +727,8 @@
                 width: auto!important;
             }
         }
-        #showmedia_video,
-        #showmedia_video_box {
-            width: 90vw!important;
-            height: calc(90vw * 0.55)!important;
-            margin: 5px auto 5px auto!important;
-        }
+
+        
         #template_container.template-container{
             width: 100%;
             max-width: var(--max-width);
@@ -685,12 +744,6 @@
             .banner-carousel .viewport {
                 width: 100% !important;
                 height: calc((var(--max-width) - 400px) * 0.57) !important;
-            }
-            #showmedia_video,
-            #showmedia_video_box {
-                width: calc(var(--max-width) * 0.9)!important;
-                height: calc((var(--max-width) * 0.9) * 0.55)!important;
-                margin: 5px auto 5px auto!important;
             }
         }
         #source_home #main_content .series-info {
@@ -1405,7 +1458,9 @@
         background-color: var(--main-bg-color)!important;
     }
     .header-menubar ul,
-    .header-search-form {
+    .header-search-form,
+    .isolated-page-footer,
+    .isolated-page-header {
         background-color: var(--header-bg)!important;
     }
     nav ul li.store {
@@ -1413,7 +1468,9 @@
     }
     #header_beta *,
     .store,
-    .store #store_button {
+    .store #store_button,
+    .isolated-page-header .custom-message,
+    .login-messages{
         color: var(--color-text)!important;
     }
     .search-form-news .search-field,
