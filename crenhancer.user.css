@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Crunchyroll Enhancer
 @namespace      https://github.com/lazy-guy/
-@version        1.3.3
+@version        1.3.4
 @description    Enhances Crunchyroll
 @homepageURL    https://github.com/lazy-guy/crunchyroll-enhancer
 @supportURL     https://github.com/lazy-guy/crunchyroll-enhancer
@@ -255,10 +255,10 @@
     Disabled "Disabled" <<<EOT
     EOT;
 }
-@advanced dropdown theming-only "Only change theme"{
-    No "No" <<<EOT
+@advanced dropdown theming-only "Redesigned UI"{
+    No "Yes" <<<EOT
     1px EOT;
-    Yes "Yes" <<<EOT
+    Yes "No" <<<EOT
     999999px EOT;
 }
 @advanced dropdown queue "Queue Style"{
@@ -346,7 +346,8 @@
     .episode-info .thumbnail,
     .guestbook.comments,
     #showmedia_about_info p,
-    .source-home .episode-img img{
+    .source-home .episode-img img,
+    li.queue-item .queue-item-content .series-info p.short-desc{
         transform: scale(0)!important;
     } EOT;
 }
